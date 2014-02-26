@@ -14,7 +14,6 @@ exports.match = function(req, res){
   var country = req.query.C;
   var flag = req.query.F;
   var temp = _.find(flags, {country:country});
-  console.log(temp);
   if(temp.code === flag) {answer=true;}
   else {answer=false;}
   res.send({answer:answer, country:country, flag:flag});
