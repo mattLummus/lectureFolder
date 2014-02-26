@@ -18,7 +18,7 @@
   function win(){
     clearInterval(counter);
     clearInterval(youLose);
-    $('body').css('background-color', 'red');
+    $('body').css('background-color', 'green');
     $('div').empty();
     alert('You win!');
   }
@@ -36,16 +36,12 @@
 
   function gameOver(){
     setInterval(youLose,300);
-    setInterval(redScreen,50);
+    $('body').css('background-color', 'red');
+    $('div').empty();
   }
 
   function youLose(){
     alert('You Suck!');
-  }
-
-  function redScreen(){
-    $('body').css('background-color', 'red');
-    $('div').empty();
   }
 
   function country(){
