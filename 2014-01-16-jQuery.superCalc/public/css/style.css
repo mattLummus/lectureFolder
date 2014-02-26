@@ -1,0 +1,147 @@
+@import url(http://fonts.googleapis.com/css?family=Basic);
+@import url(http://fonts.googleapis.com/css?family=Atomic+Age);
+
+#credit{
+  color:#CCCCCC;
+  font-size:15px;
+}
+
+body{
+  font-family: 'Basic', sans-serif;
+  background-color:black;
+  font-size:30px;
+}
+
+table{
+  border-style:ridge;
+  border:5px solid white;
+  margin-top:0px;
+  margin-left:0px;
+  height:350px;
+  width:80%;
+  max-width:68%;
+  min-width:20%;
+  float:right;
+}
+
+#banner{
+  background-image:url('/images/plastic.jpg');
+  background-color:white;
+  height:65px;
+  border:1.5px ridge white;
+  box-shadow:inset 0px 0px 15px black;
+}
+
+h1{
+  margin:auto;
+  color:#FF4719;
+}
+
+#bulk{
+  background-color:black;
+  width:530px;
+  height:530px;
+  margin:auto;
+
+}
+#wrapper{
+  background-image:url('/images/wood.jpg');
+  background-color:grey;
+  width:590px;
+  height:550px;
+  margin-top:50px;
+  margin-left:auto;
+  margin-right:auto;
+  border:3px solid white;
+}
+
+#main{
+  width:500px;
+  margin-top:15px;
+  margin-left:auto;
+  margin-right:auto;
+  border:3px solid white;
+}
+
+#queue{
+  color:white;
+  width:22%;
+  height:342px;
+  background-color:grey;
+  border:5px solid white;
+  float:left;
+  margin-right:0px;
+  margin-top:0px;
+  font-family: 'Atomic Age', cursive;
+  box-shadow:inset 0px 0px 15px black;
+  border-style:ridge;
+}
+
+#answer{
+  padding:10px;
+  color:white;
+  display:block;
+  background-color:black;
+  height:75px;
+ font-family: 'Atomic Age', cursive;
+ font-size:50px;
+}
+
+.numbers{
+  color:#CC0000;
+  font-weight:700px;
+}
+
+.operator{
+  font-weight:700px;
+}
+
+.column{
+  text-align:center;
+  margin:auto;
+  border:1px dashed red;
+}
+
+td{
+  border-style:outset;
+  border:2px solid #CCCCCC;
+  background-color:#FFFFF0;
+  width:100px;
+  height:60px;
+  box-shadow:inset 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+.operator{
+  color:red;
+  background-color:#D9DCDC;
+  color:#295266;
+}
+
+.numbers{
+  color:yellow;
+  background-color:#7A9999;
+}
+
+.hide{
+  color:#D9DCDC;
+}
+
+.emph{
+  background-color:red;
+  color:#FFFFF5;
+}
+
+#changeSign{
+  color:yellow;
+  background-color:#7A9999;
+}
+
+#push{
+  color:red;
+  background-color:#FFFFF5;
+}
+
+#clear{
+  color:red;
+  background-color:#FFFFF5;
+}

@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Chau+Philomene+One);
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+header{
+  color:#A60000;
+  border:3px solid green;
+}
+
+header h1{
+  margin-left:50px;
+  font-family: 'Chau Philomene One', sans-serif;
+  font-size:75px;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+body{
+  background: url(/images/gates_small.gif) repeat-y;
+}
+
+p{
+  font-family: 'Montserrat Alternates', sans-serif;
+  color:#006666;
+}
+
+a{
+  border: 1px solid blue;
+  text-decoration:none;
+  background-color:green;
+  color:yellow;
+  padding: 3px;
+  letter-spacing:2px;
+  border-radius:10px;
+}

@@ -1,0 +1,31 @@
+body{
+  background-color:black;
+  color:white;
+}
+
+.color{
+  height:50px;
+  width:50px;
+  border:2px solid white;
+  margin: 5px;
+  float:left;
+  border-radius:100%;
+}
+
+.selected{
+  border:3px solid red;
+}
+
+.clear{
+  clear:both;
+}
+
+#colors{
+  background-color:#4C4C4C;
+}
+
+.pixel{
+  border:1px dashed grey;
+  margin: 0px;
+  float:left;
+}

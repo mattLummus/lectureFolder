@@ -1,0 +1,15 @@
+p{
+  font-size:30px;
+}
+
+.cp{
+  font-family: 'Mr De Haviland', cursive;
+}
+
+.alert{
+  background-color:red;
+}
+
+.success{
+  background-color:green;
+}

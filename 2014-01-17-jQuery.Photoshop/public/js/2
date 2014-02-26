@@ -1,0 +1,66 @@
+$(document).ready(initalize);
+
+function initalize(){
+  $('#add-color').click(clickAddColor);
+  $('#add-pixels').click(clickAddPixels);
+  $('#colors').on('click', '.color', clickSelectColor);
+  $('#pixels').on('mouseover', '.pixel', hoverColorPixel);
+  $('button').click(clickSetPixels)
+}
+
+function hoverColorPixel(){
+  var color = $('.selected').css('background-color');
+  $(this).css('background-color', color);
+}
+
+//for text box
+function clickAddPixels(){
+  var num = $('#number-text').val();
+  num = parseInt(num);
+
+  for(var i = 0; i<num; i++){
+    var $pixel = $('<div>');
+    $pixel.addClass('pixel');
+    $('#pixels').prepend($pixel);
+  }
+}
+
+//for size buttons
+function clickSetPixels(){
+ var num = $('button').text();
+ switch(num){
+   case 'Sm.':
+    alert('Sm.');
+    break;
+   case 'Med.':
+    alert('Med.');
+    break;
+   case 'Lg.':
+    alert('Lg.');
+    break;
+   default;
+  }
+}
+
+function clickSelectColor(){
+  if($(this).hasClass('selected'))
+    $(this).removeClass('selected');
+  else{
+    $('.color').removeClass('selected');
+    $(this).addClass('selected');
+  }
+}
+
+function clickAddColor(){
+  var color = $('#color-text').val();
+  $('#color-text').val('');
+  $('#color-text').focus();
+
+  var $box = $('<div>');
+  $box.addClass('color');
+  $box.css('background-color', color);
+
+  $('#colors').prepend($box);
+}
+
+

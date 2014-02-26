@@ -1,0 +1,72 @@
+doctype html
+//[if IE 9]><html class="lt-ie10" lang="en" > <![endif]
+html(class='no-js', lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Node-Mongo-Movies
+    link(rel='stylesheet', href='/css/normalize.css')
+    link(rel='stylesheet', href='/css/foundation.css')
+    link(rel='stylesheet', href='/css/app.css')
+    script(src='/js/vendor/modernizr.js')
+  body
+    .row
+      .small-0.columns
+        #leftBanner
+      .small-12.columns
+        .row
+          .small-12.columns
+            #header.hStyle
+              h1.hstyle Mongo-Movies.Com
+        .row
+          .small-12.columns
+            form#movie
+              fieldset
+                legend Movie
+                .row
+                  .small-5.columns
+                    label Name
+                      input#nameTxt(type='text' name='name' placeholder='The Godfather' autofocus)
+                  .small-4.columns
+                    label Studio
+                      input#studioTxt(type='text' name='studio' placeholder='Paramount')
+                  .small-1.columns
+                    label Rating
+                      input#ratingTxt(type='text' name='rating' placeholder='R')
+                  .small-1.columns
+                    label Length
+                      input#lengthTxt(type='text' name='length' placeholder='180')
+                  .small-1.columns
+                    label Year
+                      input#yearTxt(type='text' name='year' placeholder='1972')
+                .row
+                  .small-6.columns
+                    label Actors
+                      input#actorsTxt(type='text' name='actors' placeholder='Al Pacino, Marlon Brando, James Caan, Rober Duvall')
+                  .small-6.columns
+                    label Director
+                      input#directorTxt(type='text' name='director' placeholder='Francis Ford Coppola')
+                .row
+                  .small-12.columns
+                    label Poster
+                      input#posterTxt(type='text' name='poster' placeholder='Poster URL')
+                .row
+                  .small-12.columns
+                    button#create Create
+                    button#save Save
+        .row
+          .small-12.columns
+            .row
+              .small-2.columns
+                button.tiny#arm Edit
+              .small-4.columns
+                input#searchText(type='text' placholder='search')
+              .small-6.columns
+                button#searchButton Search
+            #movieList
+
+    script(src='/js/vendor/jquery.js')
+    script(src='/js/vendor/foundation.js')
+    script(src='/js/vendor/lodash.js')
+    script(src='/js/source/main.js')
+
