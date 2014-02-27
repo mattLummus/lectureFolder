@@ -17,6 +17,7 @@ function load(app, fn){
   var albums = require('../routes/albums');
 
   app.get('/', d, home.index);
+  app.get('/new', d, home.redirect);
   app.get('/albums/new', d, albums.new);
   app.post('/albums', d, albums.create);
   console.log('Routes Loaded');
