@@ -12,10 +12,14 @@ html(class='no-js', lang='en')
   body
     .row
       .small-12.columns
-        #header
-          h1=title
-          img(src='http://moosware.net/Photoplorer/images/photo_album_flipping_md_wht.gif')
+        h1=title
+    .row
+      .small-12.columns
+        a.button(href='/') Home
 
+    .row
+      .small-3.small.centered.columns
+        img(src='http://moosware.net/Photoplorer/images/photo_album_flipping_md_wht.gif')
     .row
       .small-12.columns
         form(action='/albums', method='post', enctype='multipart/form-data')
